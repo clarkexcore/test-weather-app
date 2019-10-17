@@ -17,7 +17,7 @@ weatherForm.addEventListener("submit", (e) => {
                 message_error.textContent = data.error;
             } else {
                 message_error.textContent = data.location;
-                message_success.textContent = `The Temperature is ${data.currentTemp}. ${data.summary}`;
+                message_success.textContent = `The Temperature is ${data.currentTemp}. ${data.summary} There is a ${data.precip}% of rain.`;
             }
         })
     })
